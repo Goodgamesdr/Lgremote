@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LG TV Remote</title>
+  <style>
+    body { font-family: sans-serif; background: #111; color: white; text-align: center; padding: 2rem; }
+    button { margin: 0.5rem; padding: 1rem 2rem; font-size: 1.2rem; border: none; border-radius: 8px; background: #444; color: white; cursor: pointer; }
+    button:hover { background: #666; }
+    input { padding: 0.5rem; font-size: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>📺 LG TV Remote</h1>
+  <div id="pairing">
+    <button onclick="discoverTV()">🔍 Find My TV</button><br><br>
+    <input id="pairCode" placeholder="Enter pairing code" /><br>
+    <button onclick="pairTV()">🔑 Pair</button>
+  </div>
+
+  <div id="remote" style="display:none;">
+    <h2>Connected</h2>
+    <button onclick="send('volumeUp')">🔊 Volume +</button>
+    <button onclick="send('volumeDown')">🔉 Volume -</button>
+    <button onclick="send('channelUp')">📺 Channel +</button>
+    <button onclick="send('channelDown')">📺 Channel -</button><br>
+    <button onclick="send('up')">⬆️</button><br>
+    <button onclick="send('left')">⬅️</button>
+    <button onclick="send('ok')">✅ OK</button>
+    <button onclick="send('right')">➡️</button><br>
+    <button onclick="send('down')">⬇️</button><br>
+    <button onclick="send('back')">🔙 Back</button>
+    <button onclick="send('home')">🏠 Home</button>
+    <button onclick="send('power')">⏻ Power</button><br>
+    <button onclick="send('launchYouTube')">📹 YouTube</button>
+    <button onclick="send('launchNetflix')">🎬 Netflix</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
