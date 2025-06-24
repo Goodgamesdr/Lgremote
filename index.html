@@ -1,3 +1,13 @@
+/*
+Project: LG TV Web Remote (with Pairing and Discovery)
+Files Included:
+1. public/index.html       -> GitHub Pages UI
+2. public/app.js           -> Frontend JS
+3. server/server.js        -> Node.js backend (TV discovery + pairing + proxy)
+*/
+
+/* ---------- 1. public/index.html ---------- */
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +26,7 @@
   <div id="pairing">
     <button onclick="discoverTV()">🔍 Find My TV</button><br><br>
     <input id="pairCode" placeholder="Enter pairing code" /><br>
-    <button onclick="pairTV()">🔑 Paair</button>
+    <button onclick="pairTV()">🔑 Pair</button>
   </div>
 
   <div id="remote" style="display:none;">
@@ -40,3 +50,5 @@
   <script src="app.js"></script>
 </body>
 </html>
+
+
