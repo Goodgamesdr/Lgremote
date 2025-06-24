@@ -4,7 +4,7 @@ function discoverTV() {
   fetch(`${API}/discover`)
     .then(res => res.json())
     .then(data => alert(`Found TV at ${data.ip}`))
-    .catch(() => alert("No TV found"));
+    .catch(() => alert("No TV found dumbass"));
 }
 
 function pairTV() {
